@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Portfolio — Home</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="navbar">
+    <nav class="navigationbar">
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="logo">
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Menu openen" aria-expanded="false">
+            <i class="fa-solid fa-bars nav-icon-open"></i>
+            <i class="fa-solid fa-xmark nav-icon-close"></i>
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="vaardigheden.html">Vaardigheden</a></li>
+            <li><a href="work.html">Projecten</a></li>
+            <li><a href="opleiding.html">Opleiding</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="home" class="home-hero">
+        <div class="home-bg" aria-hidden="true">
+            <span class="home-blob home-blob-1"></span>
+            <span class="home-blob home-blob-2"></span>
+        </div>
+
+        <div class="home-content">
+            <div class="home-text">
+                <span class="home-label">Portfolio · 2026</span>
+                <h1 class="home-title">Hallo, ik ben <span class="home-name">Dahoe Ishaan</span></h1>
+                <p class="home-tagline">Nieuwsgierig, leergierig — en altijd bezig met de volgende uitdaging in IT.</p>
+
+                <div class="home-tags">
+                    <span class="home-tag"><i class="fa-solid fa-code"></i> ICT</span>
+                    <span class="home-tag"><i class="fa-solid fa-network-wired"></i> Netwerken</span>
+                    <span class="home-tag"><i class="fa-solid fa-graduation-cap"></i> UNASAT</span>
+                </div>
+
+                <div class="button-container">
+                    <a href="work.html" class="btn btn-primary">Bekijk Projecten</a>
+                    <a href="about.html" class="btn btn-secondary">Over Mij</a>
+                </div>
+            </div>
+
+            <div class="home-photo-wrap">
+                <div class="home-photo-ring" aria-hidden="true"></div>
+                <img src="img/profile-picture.jpg" alt="Profielfoto van Dahoe Ishaan" class="profile-picture"/>
+            </div>
+        </div>
+    </section>
+</main>
+
+<div class="site-footer">
+    <p>&copy; 2026 Dahoe Ishaan</p>
+</div>
+
+</body>
+</html>

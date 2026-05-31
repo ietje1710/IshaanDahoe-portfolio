@@ -1,0 +1,360 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+#about,
+#vaardigheden,
+#projecten,
+#contact {
+    scroll-margin-top: 80px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 32px;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #3b82f6;
+    color: #ffffff;
+    border: 1px solid #3b82f6;
+}
+
+.btn-primary:hover {
+    background-color: #2563eb;
+    border-color: #2563eb;
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.35);
+    transform: translateY(-4px);
+}
+
+.btn-secondary {
+    background-color: rgba(59, 130, 246, 0.04);
+    color: #3b82f6;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.btn-secondary:hover {
+    color: #2563eb;
+    border-color: #3b82f6;
+    background-color: #eff6ff;
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.2);
+    transform: translateY(-4px);
+}
+
+.back-home {
+    display: flex;
+    justify-content: center;
+    padding: 0 24px 48px;
+}
+
+.back-home .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.zwarteblok + .back-home,
+.contact-section + .back-home {
+    background-color: #0a1128;
+    padding-bottom: 60px;
+}
+
+.page-main .contact-section + .back-home {
+    background-color: #0f172a;
+}
+
+.vaardigheden-sectie + .back-home {
+    background-color: #ffffff;
+}
+
+.mijnwerk-sectie + .back-home,
+.opleiding-sectie + .back-home {
+    background-color: #f8fafc;
+}
+
+.zwarteblok + .back-home .btn-secondary,
+.page-main .contact-section + .back-home .btn-secondary {
+    background-color: rgba(255, 255, 255, 0.06);
+    color: #ffffff;
+    border-color: rgba(148, 163, 184, 0.4);
+}
+
+.zwarteblok + .back-home .btn-secondary:hover,
+.page-main .contact-section + .back-home .btn-secondary:hover {
+    background-color: rgba(59, 130, 246, 0.15);
+    color: #ffffff;
+    border-color: #3b82f6;
+}
+
+.label-blauw {
+    display: block;
+    color: #2563EB;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.navigationbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 15px 50px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #3b82f6;
+    background-color: rgba(59, 130, 246, 0.05);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+}
+
+.nav-links a.nav-active {
+    color: #2563eb;
+    background-color: rgba(37, 99, 235, 0.08);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.page-main {
+    padding-top: 76px;
+    min-height: calc(100svh - 76px);
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    color: #64748b;
+    font-size: 22px;
+    line-height: 1;
+}
+
+.nav-icon-close {
+    display: none;
+}
+
+.nav-toggle.is-active .nav-icon-open {
+    display: none;
+}
+
+.nav-toggle.is-active .nav-icon-close {
+    display: inline;
+}
+
+body.menu-open {
+    overflow: hidden;
+}
+
+.logo img {
+    height: 45px;
+    width: auto;
+}
+
+.site-footer {
+    background-color: #0a0f1a;
+    border-top: 1px solid rgba(148, 163, 184, 0.1);
+    padding: 14px 20px;
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 11px;
+    color: #64748b;
+    letter-spacing: 0.3px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-14px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(22px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar {
+    animation: fadeInDown 0.6s ease-out both;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal.reveal-slow {
+    transition-duration: 0.85s;
+}
+
+.project-card.reveal {
+    transition-delay: 0.1s;
+}
+
+.reveal-stagger > * {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal-stagger.is-visible > * {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-stagger.is-visible > *:nth-child(1) { transition-delay: 0.08s; }
+.reveal-stagger.is-visible > *:nth-child(2) { transition-delay: 0.16s; }
+.reveal-stagger.is-visible > *:nth-child(3) { transition-delay: 0.24s; }
+.reveal-stagger.is-visible > *:nth-child(4) { transition-delay: 0.32s; }
+.reveal-stagger.is-visible > *:nth-child(5) { transition-delay: 0.4s; }
+.reveal-stagger.is-visible > *:nth-child(6) { transition-delay: 0.48s; }
+
+@media (hover: hover) {
+    .reveal-stagger.is-visible > .stat-card:hover,
+    .reveal-stagger.is-visible > .contact-card:hover,
+    .reveal-stagger.is-visible > .skill-card:hover,
+    .reveal.is-visible.project-card:hover {
+        border-color: #3b82f6;
+        box-shadow: 0 10px 25px rgba(59, 130, 246, 0.25);
+        transform: translateY(-4px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .navbar {
+        animation: none;
+    }
+
+    .reveal,
+    .reveal-stagger > * {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .navigationbar {
+        padding: 12px 20px;
+        position: relative;
+    }
+
+    .nav-toggle {
+        display: block;
+        z-index: 1001;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        border-bottom: 1px solid #f1f5f9;
+        box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+        padding: 8px 0 16px;
+    }
+
+    .nav-links.nav-open {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 14px 24px;
+        font-size: 13px;
+        border-radius: 0;
+    }
+
+    .nav-links a:hover {
+        box-shadow: none;
+        background-color: rgba(59, 130, 246, 0.06);
+    }
+}
+

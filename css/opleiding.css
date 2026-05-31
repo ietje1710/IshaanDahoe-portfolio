@@ -1,0 +1,127 @@
+.opleiding-sectie {
+    background-color: #f8fafc;
+    padding: 100px 0;
+}
+
+.page-main .opleiding-sectie {
+    min-height: calc(100svh - 76px);
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.container-small {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.label-pad {
+    color: #3b82f6;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.titel-opleiding {
+    font-size: 50px;
+    font-family: 'Georgia', serif;
+    margin: 10px 0 50px 0;
+}
+
+.timeline {
+    border-left: 2px solid #e2e8f0;
+    margin-left: 20px;
+    padding-left: 40px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.dot {
+    position: absolute;
+    left: -51px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 4px solid #3b82f6;
+    border-radius: 50%;
+}
+
+.datum {
+    color: #3b82f6;
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.timeline-item h3 {
+    font-size: 24px;
+    font-family: 'Georgia', serif;
+    color: #1e293b;
+    margin-bottom: 5px;
+}
+
+.school {
+    color: #64748b;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.beschrijving {
+    color: #475569;
+    line-height: 1.7;
+    max-width: 700px;
+}
+
+.badge-diploma {
+    background-color: #f0fdf4;
+    color: #22c55e;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid #bbf7d0;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .opleiding-sectie {
+        padding: 80px 0 60px;
+    }
+
+    .container-small {
+        padding: 0 24px;
+    }
+
+    .titel-opleiding {
+        font-size: 36px;
+        margin-bottom: 36px;
+    }
+
+    .timeline {
+        margin-left: 12px;
+        padding-left: 28px;
+    }
+
+    .dot {
+        left: -39px;
+        width: 16px;
+        height: 16px;
+    }
+
+    .timeline-item h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titel-opleiding {
+        font-size: 28px;
+    }
+}
